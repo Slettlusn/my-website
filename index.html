@@ -27,15 +27,29 @@
       </nav>
 
       <section class="image-only-panel music-panel" id="music" aria-label="Music player">
-        <img src="bilder/music player.jpg" alt="Retro music player mockup">
+        <div class="music-player-art" data-music-player>
+          <img class="music-player-base" src="bilder/music player nettles.jpg" alt="Retro music player mockup for Nettles by Ethel Cain">
+          <a
+            class="music-player-link"
+            href="https://open.spotify.com/playlist/30vS9V8XPQmhfB2U64kff8?si=7647ba5c34354466"
+            aria-label="Open Spotify playlist"
+          ></a>
+          <audio class="music-audio" preload="metadata"></audio>
+          <p class="visually-hidden music-status" aria-live="polite">Ready to play.</p>
+          <input class="music-progress" type="range" min="0" max="0" step="0.1" value="0" aria-label="Song progress">
+          <button class="music-control music-control--previous" type="button" data-action="previous" aria-label="Previous song"></button>
+          <button class="music-control music-control--next" type="button" data-action="next" aria-label="Next song"></button>
+          <button class="music-control music-control--play" type="button" data-action="toggle" aria-label="Play song"></button>
+          <button class="music-control music-control--stop" type="button" data-action="stop" aria-label="Stop song"></button>
+          <button class="music-control music-control--mute" type="button" data-action="mute" aria-label="Mute audio" aria-pressed="false"></button>
+        </div>
       </section>
 
       <section class="image-only-panel art-panel" id="art" aria-label="Art">
-        <img src="bilder/gyaru.jpg" alt="Gyaru art by me">
+        <a href="art.html" class="image-link">
+          <img src="bilder/gyaru.jpg" alt="Gyaru art by me">
+        </a>
       </section>
-      <a href="art.html" class="image-link">
-    
-</a>
 
       <aside class="panel updates-panel" id="updates">
         <h2 class="panel-heading">Updates</h2>
