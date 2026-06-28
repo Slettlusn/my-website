@@ -132,6 +132,53 @@ body {
   animation: float 3.6s ease-in-out infinite;
 }
 
+@media (min-width: 981px) {
+  .layout-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: none;
+  }
+
+  .nav-panel {
+    grid-area: auto;
+    grid-row: span 2 / span 2;
+  }
+
+  .music-panel {
+    grid-area: auto;
+    grid-column: span 2 / span 2;
+  }
+
+  .art-panel {
+    grid-area: auto;
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 4;
+  }
+
+  .me-panel {
+    grid-area: auto;
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+
+  .updates-panel {
+    grid-area: auto;
+    grid-row: span 3 / span 3;
+    grid-row-start: 3;
+  }
+
+  .tamagotchi-panel {
+    grid-area: auto;
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 4;
+  }
+}
+
 .panel-heading {
   margin: 0;
   padding: 14px 16px;
@@ -216,7 +263,7 @@ body {
 
 .music-control {
   z-index: 2;
-  top: 71.1%;
+  top: 75.2%;
   width: 11.6%;
   height: 8.5%;
   padding: 0;
