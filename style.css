@@ -21,7 +21,9 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(180deg, #f9f2fb 0%, #eef5ff 100%);
+  background-image: url("bilder/bakgrunn.jpg");
+  background-size: cover;
+  background-position: center;
   color: var(--text-main);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
@@ -44,23 +46,31 @@ body {
 
 .panel {
   overflow: hidden;
-  border: 2px solid var(--panel-border);
-  border-radius: 0;
+  
   background: var(--panel-bg);
-  box-shadow: 0 10px 24px rgba(128, 105, 143, 0.08);
+  
 }
 
 .banner-panel {
   min-height: 170px;
+  height: clamp(170px, 22vw, 240px);
   margin-bottom: 18px;
+  padding: 12px 20px;
+  background-image: url("bilder/bakgrunn.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner-panel img {
   display: block;
-  width: 100%;
-  height: 100%;
-  min-height: 170px;
-  object-fit: cover;
+  width: auto;
+  height: auto;
+  max-width: min(100%, 860px);
+  max-height: 100%;
 }
 
 .layout-grid {
@@ -373,8 +383,8 @@ body {
     grid-template-columns: minmax(220px, 240px) minmax(280px, 1fr);
     grid-template-areas:
       "nav music"
-      "updates art"
       "me art"
+      "updates art"
       "tamagotchi tamagotchi";
   }
 
@@ -400,8 +410,8 @@ body {
     grid-template-areas:
       "nav"
       "music"
-      "art"
       "me"
+      "art"
       "updates"
       "tamagotchi";
   }
@@ -410,9 +420,13 @@ body {
     padding: 8px;
   }
 
-  .banner-panel,
-  .banner-panel img {
+  .banner-panel {
     min-height: 120px;
+  }
+
+  .banner-panel {
+    height: clamp(120px, 30vw, 170px);
+    padding: 10px 12px;
   }
 
   .tamagotchi-panel {
