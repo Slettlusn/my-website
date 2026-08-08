@@ -21,7 +21,9 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background-image: url("bilder/bakgrunn.jpg");
+  background-image: url("bilder/lysblue.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   color: var(--text-main);
@@ -35,11 +37,6 @@ body {
   border: 1px solid rgba(143, 123, 156, 0.3);
   border-radius: 0;
   background-color: var(--shell-bg);
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.52)),
-    url("bilder/bakgrunn.jpg");
-  background-size: cover;
-  background-position: center;
   box-shadow: var(--shadow);
   backdrop-filter: blur(8px);
 }
@@ -52,14 +49,11 @@ body {
 }
 
 .banner-panel {
-  min-height: 170px;
-  height: clamp(170px, 22vw, 240px);
+  min-height: 210px;
+  height: clamp(210px, 26vw, 320px);
   margin-bottom: 18px;
-  padding: 12px 20px;
-  background-image: url("bilder/bakgrunn.jpg");
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+  padding: 8px 12px;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,7 +63,7 @@ body {
   display: block;
   width: auto;
   height: auto;
-  max-width: min(100%, 860px);
+  max-width: min(100%, 1020px);
   max-height: 100%;
 }
 
@@ -92,8 +86,11 @@ body {
   background-position: center;
 }
 
-.nav-panel {
+.left-rail {
   grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .music-panel {
@@ -171,9 +168,9 @@ body {
     grid-template-areas: none;
   }
 
-  .nav-panel {
+  .left-rail {
     grid-area: auto;
-    grid-row: span 2 / span 2;
+    grid-row: span 3 / span 3;
   }
 
   .music-panel {
@@ -198,8 +195,8 @@ body {
 
   .updates-panel {
     grid-area: auto;
-    grid-row: span 3 / span 3;
-    grid-row-start: 3;
+    grid-row: span 2 / span 2;
+    grid-row-start: 4;
   }
 
   .tamagotchi-panel {
@@ -219,31 +216,75 @@ body {
   font-size: 1.2rem;
 }
 
-.nav-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 14px;
+.nav-map {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 325 / 568;
 }
 
-.nav-button {
+.nav-map img {
   display: block;
-  padding: 11px 14px;
-  border: 1px solid rgba(143, 123, 156, 0.45);
-  border-radius: 0;
-  background: linear-gradient(180deg, #fffdfa 0%, #ffeef6 100%);
-  color: var(--text-main);
-  font-weight: 700;
-  text-decoration: none;
-  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+  width: 100%;
+  height: 100%;
 }
 
-.nav-button:hover,
-.nav-button:focus-visible {
-  background: linear-gradient(180deg, #fff8ff 0%, #f9ddf2 100%);
-  box-shadow: 0 8px 16px rgba(143, 123, 156, 0.14);
+.nav-hotspot {
+  position: absolute;
+  display: block;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.18s ease, border-color 0.18s ease;
+}
+
+.nav-hotspot:hover,
+.nav-hotspot:focus-visible {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(50, 37, 63, 0.85);
   outline: none;
-  transform: translateY(-2px);
+}
+
+.nav-hotspot--about {
+  top: 20.8%;
+  left: 18%;
+  right: 33%;
+  height: 8.6%;
+}
+
+.nav-hotspot--art {
+  top: 36.2%;
+  left: 18%;
+  right: 33%;
+  height: 8.8%;
+}
+
+.nav-hotspot--music {
+  top: 52.3%;
+  left: 18%;
+  right: 33%;
+  height: 8.8%;
+}
+
+.nav-hotspot--links {
+  top: 68.8%;
+  left: 18%;
+  right: 33%;
+  height: 9.4%;
+}
+
+.nav-hotspot--updates {
+  top: 85.3%;
+  left: 18%;
+  right: 33%;
+  height: 8.8%;
+}
+
+.dolphin-panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(143, 123, 156, 0.35);
+  object-fit: cover;
 }
 
 .image-only-panel {
@@ -489,12 +530,12 @@ body {
   }
 
   .banner-panel {
-    min-height: 120px;
+    min-height: 150px;
   }
 
   .banner-panel {
-    height: clamp(120px, 30vw, 170px);
-    padding: 10px 12px;
+    height: clamp(150px, 38vw, 220px);
+    padding: 6px 8px;
   }
 
   .tamagotchi-panel {
