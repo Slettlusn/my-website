@@ -1,7 +1,7 @@
 :root {
   --page-bg: #f6eef8;
-  --shell-bg: rgba(255, 255, 255, 0.8);
-  --panel-bg: rgba(255, 255, 255, 0.94);
+  --shell-bg: transparent;
+  --panel-bg: transparent;
   --panel-border: #8f7b9c;
   --accent: #f4cfe0;
   --accent-soft: #e5e9f8;
@@ -34,7 +34,7 @@ body {
   width: min(1180px, calc(100% - 32px));
   margin: 20px auto;
   padding: 18px;
-  border: 1px solid rgba(143, 123, 156, 0.3);
+  border: 1px solid rgba(143, 123, 156, 0.12);
   border-radius: 0;
   background-color: var(--shell-bg);
   box-shadow: var(--shadow);
@@ -43,9 +43,7 @@ body {
 
 .panel {
   overflow: hidden;
-  
   background: var(--panel-bg);
-  
 }
 
 .banner-panel {
@@ -79,11 +77,8 @@ body {
     ". tamagotchi tamagotchi";
   align-items: start;
   border-radius: 0;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)),
-    url("bilder/bakgrunn.jpg");
-  background-size: cover;
-  background-position: center;
+  /* make the grid transparent so the site background shows through */
+  background: transparent;
 }
 
 .left-rail {
@@ -298,6 +293,15 @@ body {
   border-radius: 0;
   object-fit: cover;
   box-shadow: 0 14px 28px rgba(128, 105, 143, 0.14);
+}
+
+.me-panel img:hover,
+.me-panel img:focus-visible,
+.me-panel:hover img,
+.me-panel .image-link img:hover,
+.me-panel .image-link img:focus-visible,
+.me-panel:hover .image-link img {
+  cursor: url("bilder/Stylus\ Normal\ Select.cur"), pointer;
 }
 
 .music-player-art {
