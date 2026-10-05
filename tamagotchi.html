@@ -12,35 +12,25 @@
   <div class="scanlines" aria-hidden="true"></div>
   <a class="skip-link" href="#content">Skip to content</a>
 
-  <main class="luno-window" aria-labelledby="window-title">
-    <header class="luno-titlebar">
-      <span class="luno-title-icon" aria-hidden="true">✦</span>
-      <strong id="window-title">tamagotchi</strong>
-      <a class="luno-close raised" href="index.html" aria-label="Close and return home">×</a>
-    </header>
-
-    <div class="luno-address">
-      <a class="luno-back raised" href="index.html" aria-label="Back to the homepage">‹</a>
-      <span>Address</span>
-      <div>My Documents / Tamagotchi</div>
+  <main class="tamagotchi-device" aria-label="Tamagotchi project window">
+    <div class="tamagotchi-screen">
+      <section class="luno-content" id="content">
+        <iframe
+          class="luno-frame"
+          name="window-content"
+          src="tamagotchi-home.html"
+          title="Tamagotchi window content"
+        ></iframe>
+      </section>
     </div>
 
-    <section class="luno-content" id="content">
-      <iframe
-        class="luno-frame"
-        name="window-content"
-        src="tamagotchi-home.html"
-        title="Tamagotchi window content"
-      ></iframe>
-    </section>
-
-    <nav class="luno-shortcuts" aria-label="Site shortcuts">
-      <a class="raised" href="tamagotchi-home.html" target="window-content"><span aria-hidden="true">⌂</span>home</a>
-      <a class="raised" href="tamagotchi-supplies.html" target="window-content"><span aria-hidden="true">♡</span>Supplies</a>
-      <a class="raised" href="tamagotchi-tutorial.html" target="window-content"><span aria-hidden="true">✦</span>Tutorial</a>
-      <a class="raised" href="tamagotchi-finalresult.html" target="window-content"><span aria-hidden="true">↗</span>Final Result</a>
-      <a class="raised" href="tamagotchi-credit.html" target="window-content"><span aria-hidden="true">☷</span>Credit</a>
-    </nav>
+    <img class="tamagotchi-frame" src="bilder/tamagotchi.PNG" alt="" aria-hidden="true">
+    <a class="device-hotspot device-hotspot--home" href="tamagotchi-home.html" target="window-content" aria-label="Home"></a>
+    <a class="device-hotspot device-hotspot--tutorial" href="tamagotchi-tutorial.html" target="window-content" aria-label="Tutorial"></a>
+    <a class="device-hotspot device-hotspot--credits" href="tamagotchi-credit.html" target="window-content" aria-label="Credits"></a>
+    <span class="device-label device-label--home">home</span>
+    <span class="device-label device-label--tutorial">tutorial</span>
+    <span class="device-label device-label--credits">credits</span>
   </main>
 </body>
 </html>
