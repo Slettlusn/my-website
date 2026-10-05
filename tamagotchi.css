@@ -62,6 +62,34 @@ body {
   transform: translateY(0);
 }
 
+.homepage-button {
+  position: fixed;
+  z-index: 11;
+  top: 16px;
+  left: 16px;
+  padding: 8px 12px;
+  color: var(--window-darkest);
+  background: var(--window-light);
+  border: 2px solid var(--window-lightest);
+  border-right-color: var(--window-darkest);
+  border-bottom-color: var(--window-darkest);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.homepage-button:hover,
+.homepage-button:focus-visible {
+  background: var(--window-lightest);
+  outline: 2px dotted var(--window-darkest);
+  outline-offset: 2px;
+}
+
+.homepage-button:active {
+  border-color: var(--window-darkest);
+  border-right-color: var(--window-lightest);
+  border-bottom-color: var(--window-lightest);
+}
+
 .tamagotchi-device {
   position: relative;
   width: min(780px, calc(100vw - 24px));
