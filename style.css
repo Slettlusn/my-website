@@ -102,6 +102,7 @@ body {
 
 .me-panel {
   grid-area: me;
+  position: relative;
 }
 
 .tamagotchi-panel {
@@ -304,6 +305,28 @@ body {
   cursor: url("bilder/Stylus\ Normal\ Select.cur"), pointer;
 }
 
+.me-hotspot {
+  position: absolute;
+  z-index: 1;
+  left: 39%;
+  top: 83.4%;
+  width: 18.3%;
+  height: 5.5%;
+  display: block;
+  cursor: url("bilder/Stylus\ Normal\ Select.cur"), pointer;
+  transition: background-color 0.3s ease;
+}
+
+.me-hotspot:hover,
+.me-hotspot:focus-visible {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.me-hotspot:focus-visible {
+  outline: 2px dashed rgba(83, 70, 93, 0.9);
+  outline-offset: 2px;
+}
+
 .music-player-art {
   position: relative;
   width: 100%;
@@ -346,10 +369,12 @@ body {
   padding: 0;
   border: 0;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.music-control:hover {
-  background: rgba(255, 255, 255, 0.1);
+.music-control:hover,
+.music-control:focus-visible {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .music-control:active {
