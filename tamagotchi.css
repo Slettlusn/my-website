@@ -20,6 +20,17 @@ body {
   margin: 0;
 }
 
+.scanlines {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+  background:
+    linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.025) 50%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  background-size: 100% 8px, 3px 100%;
+}
+
 .tamagotchi-page {
   min-height: 100vh;
   display: grid;
@@ -27,7 +38,7 @@ body {
   padding: 20px;
   color: var(--window-darkest);
   background-color: #f5cfe3;
-  background-image: url("bilder/bg.png");
+  background-image: url("bilder/tamagotchi-pink.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -52,7 +63,7 @@ body {
 }
 
 .luno-window {
-  width: min(520px, calc(100vw - 24px));
+  width: min(620px, calc(100vw - 24px));
   padding: 3px;
   overflow: hidden;
   background: var(--window-light);
@@ -145,7 +156,7 @@ body {
 }
 
 .luno-content {
-  height: clamp(300px, 54vh, 450px);
+  height: clamp(340px, 60vh, 520px);
   margin: 5px;
   padding: 0;
   overflow: hidden;
@@ -204,7 +215,7 @@ body {
 
 .tamagotchi-feature {
   display: block;
-  width: min(100%, 330px);
+  width: min(100%, 400px);
   height: auto;
   margin: 0 auto;
   border: 5px solid var(--window-lightest);
