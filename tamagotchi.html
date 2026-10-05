@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My Tamagotchi page">
+  <title>Tamagotchi</title>
+  <link rel="icon" type="image/x-icon" href="bilder/favicon.ico">
+  <link rel="stylesheet" href="tamagotchi.css">
+</head>
+<body class="tamagotchi-page">
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <main class="luno-window" aria-labelledby="window-title">
+    <header class="luno-titlebar">
+      <span class="luno-title-icon" aria-hidden="true">✦</span>
+      <strong id="window-title">tamagotchi</strong>
+      <a class="luno-close raised" href="index.html" aria-label="Close and return home">×</a>
+    </header>
+
+    <div class="luno-address">
+      <a class="luno-back raised" href="index.html" aria-label="Back to the homepage">‹</a>
+      <span>Address</span>
+      <div>My Documents / Tamagotchi</div>
+    </div>
+
+    <section class="luno-content" id="content">
+      <iframe
+        class="luno-frame"
+        name="window-content"
+        src="tamagotchi-home.html"
+        title="Tamagotchi window content"
+      ></iframe>
+    </section>
+
+    <nav class="luno-shortcuts" aria-label="Site shortcuts">
+      <a class="raised" href="tamagotchi-home.html" target="window-content"><span aria-hidden="true">⌂</span>home</a>
+      <a class="raised" href="aboutMe.html"><span aria-hidden="true">♡</span>about me</a>
+      <a class="raised" href="art.html"><span aria-hidden="true">✦</span>art</a>
+      <a class="raised" href="links.html"><span aria-hidden="true">↗</span>links</a>
+      <a class="raised" href="#content"><span aria-hidden="true">☷</span>tamagotchi</a>
+    </nav>
+  </main>
+</body>
+</html>

@@ -1,0 +1,260 @@
+:root {
+  --window-paper: #fffafc;
+  --window-lightest: #f8e7f0;
+  --window-light: #dfbdce;
+  --window-shadow: #b9809d;
+  --window-dark: #77485f;
+  --window-darkest: #392431;
+  --window-title-text: #fffafd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.tamagotchi-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  color: var(--window-darkest);
+  background-color: #f5cfe3;
+  background-image: url("bilder/bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  font-family: Tahoma, "MS Sans Serif", sans-serif;
+  font-size: 14px;
+}
+
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 10;
+  padding: 8px 12px;
+  color: var(--window-darkest);
+  background: var(--window-paper);
+  transform: translateY(-160%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.luno-window {
+  width: min(520px, calc(100vw - 24px));
+  padding: 3px;
+  overflow: hidden;
+  background: var(--window-light);
+  border: 2px solid var(--window-dark);
+  border-radius: 2px;
+  box-shadow:
+    inset 2px 2px var(--window-lightest),
+    inset -2px -2px var(--window-shadow),
+    5px 7px 18px rgba(73, 42, 59, 0.28);
+}
+
+.luno-titlebar {
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 5px 4px 7px;
+  color: var(--window-title-text);
+  background:
+    linear-gradient(90deg, var(--window-dark), rgba(119, 72, 95, 0.28)),
+    var(--window-shadow);
+  letter-spacing: 0.02em;
+}
+
+.luno-titlebar strong {
+  flex: 1;
+}
+
+.luno-title-icon {
+  font-size: 17px;
+  line-height: 1;
+}
+
+.raised {
+  color: var(--window-darkest);
+  background: var(--window-light);
+  border: 2px solid var(--window-lightest);
+  border-right-color: var(--window-darkest);
+  border-bottom-color: var(--window-darkest);
+}
+
+.raised:active {
+  border-color: var(--window-darkest);
+  border-right-color: var(--window-lightest);
+  border-bottom-color: var(--window-lightest);
+}
+
+.luno-close {
+  width: 25px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  color: var(--window-darkest);
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.luno-address {
+  display: grid;
+  grid-template-columns: 25px auto minmax(0, 1fr);
+  align-items: center;
+  gap: 7px;
+  min-height: 39px;
+  padding: 5px;
+  border-bottom: 1px solid var(--window-shadow);
+}
+
+.luno-back {
+  width: 25px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  color: var(--window-darkest);
+  font-size: 20px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.luno-address div {
+  min-width: 0;
+  padding: 4px 7px;
+  overflow: hidden;
+  background: var(--window-paper);
+  border: 2px solid var(--window-shadow);
+  border-right-color: var(--window-lightest);
+  border-bottom-color: var(--window-lightest);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.luno-content {
+  height: clamp(300px, 54vh, 450px);
+  margin: 5px;
+  padding: 0;
+  overflow: hidden;
+  background: var(--window-paper);
+  border: 2px solid var(--window-dark);
+  border-right-color: var(--window-lightest);
+  border-bottom-color: var(--window-lightest);
+}
+
+.luno-frame {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: var(--window-paper);
+}
+
+.window-content-page {
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: var(--window-darkest);
+  background: var(--window-paper);
+  font-family: Tahoma, "MS Sans Serif", sans-serif;
+  font-size: 14px;
+}
+
+.window-content {
+  min-height: 100vh;
+  padding: clamp(12px, 4vw, 22px);
+  text-align: center;
+}
+
+.window-content h1 {
+  margin: 4px 0 18px;
+  color: var(--window-dark);
+  font-family: Georgia, serif;
+  font-size: clamp(1.65rem, 6vw, 2.25rem);
+  line-height: 1.05;
+}
+
+.window-content p {
+  max-width: 38ch;
+  margin: 14px auto 0;
+  line-height: 1.55;
+}
+
+.window-content .luno-kicker {
+  margin-top: 0;
+  color: var(--window-shadow);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.tamagotchi-feature {
+  display: block;
+  width: min(100%, 330px);
+  height: auto;
+  margin: 0 auto;
+  border: 5px solid var(--window-lightest);
+  outline: 1px solid var(--window-shadow);
+  object-fit: cover;
+}
+
+.luno-shortcuts {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 0 5px 3px;
+}
+
+.luno-shortcuts a {
+  min-width: 0;
+  min-height: 72px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 4px;
+  padding: 7px 3px;
+  color: var(--window-darkest);
+  font-size: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.luno-shortcuts a span {
+  font-size: 1.45rem;
+  line-height: 1;
+}
+
+.luno-shortcuts a:hover,
+.luno-shortcuts a:focus-visible {
+  background: rgba(255, 255, 255, 0.34);
+  outline: 1px dotted var(--window-darkest);
+  outline-offset: -5px;
+}
+
+@media (max-width: 480px) {
+  .tamagotchi-page {
+    padding: 12px;
+  }
+
+  .luno-content {
+    height: min(390px, 51vh);
+  }
+
+  .luno-shortcuts a {
+    min-height: 62px;
+    font-size: 0.64rem;
+  }
+}
