@@ -122,15 +122,15 @@ body {
   position: relative;
   width: 100%;
   max-width: 360px;
-  aspect-ratio: 1;
+  aspect-ratio: 1328 / 1441;
 }
 
 .tamagotchi-screen {
   position: absolute;
-  top: 38.6%;
-  left: 33.3%;
-  width: 30.1%;
-  height: 30.2%;
+  top: 29.5%;
+  left: 21.8%;
+  width: 48%;
+  height: 43.5%;
   overflow: hidden;
   background: #000;
 }
@@ -141,9 +141,6 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  transform: scale(1.08);
-  transform-origin: center;
-  will-change: transform;
 }
 
 .tamagotchi-overlay {

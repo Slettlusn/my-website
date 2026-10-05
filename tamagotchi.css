@@ -126,7 +126,7 @@ body {
 
 .device-hotspot--home,
 .device-label--home {
-  top: 81.2%;
+  top: 81.50%;
   left: 26.65%;
   width: 9.5%;
   height: 8.75%;
@@ -137,13 +137,13 @@ body {
   top: 85%;
   left: 41.25%;
   width: 9.65%;
-  height: 8.85%;
+  height: 7.85%;
 }
 
 .device-hotspot--credits,
 .device-label--credits {
   top: 81.2%;
-  left: 54.95%;
+  left: 54.75%;
   width: 9.65%;
   height: 8.75%;
 }
