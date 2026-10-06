@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tamagotchi Tutorial</title>
   <link rel="stylesheet" href="tamagotchi.css">
+  <script src="tamagotchi-image-popup.js" defer></script>
 </head>
 <body class="window-content-page">
   <main class="window-content">
@@ -21,12 +22,14 @@
       <p>This project is built around a Raspberry Pi Pico RP2040 running MicroPython. The Pico is connected to a 0.96-inch SSD1306 OLED display using I²C, along with three physical buttons used to control the Tamagotchi.</p>
       <p>The components are mounted on veroboard and connected using short solid-core wires. Once everything has been soldered and tested, the electronics are placed inside a 3D-printed case.</p>
       <p>The Pico is programmed using MicroPython through Thonny, and the project is based on Kevin McAleer's Pico-Tamachibi project. Before permanently soldering everything together, I tested the Pico, OLED display, and buttons individually to make sure each component worked correctly.</p>
-      <img
-        class="tutorial-image"
-        src="bilder/tools-used.png"
-        alt="Tools and components used: a Raspberry Pi Pico RP2040, a 0.96-inch SSD1306 OLED display, three tactile push buttons, veroboard, solid-core wire, a Micro-USB data cable, Dupont jumper wires, a 3D-printed case, soldering equipment, Thonny IDE, and MicroPython"
-        loading="lazy"
-      >
+      <button class="tutorial-image-button" type="button" data-image-popup aria-label="Enlarge tools and components image" aria-haspopup="dialog">
+        <img
+          class="tutorial-image"
+          src="bilder/tools-used.png"
+          alt="Tools and components used: a Raspberry Pi Pico RP2040, a 0.96-inch SSD1306 OLED display, three tactile push buttons, veroboard, solid-core wire, a Micro-USB data cable, Dupont jumper wires, a 3D-printed case, soldering equipment, Thonny IDE, and MicroPython"
+          loading="lazy"
+        >
+      </button>
     </section>
 
     <section class="tutorial-section" aria-labelledby="wiring-heading">

@@ -273,6 +273,82 @@ body {
   width: 100%;
 }
 
+.tutorial-image-button {
+  display: block;
+  width: min(100%, 400px);
+  margin: 18px auto 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+}
+
+.tutorial-image-button .tutorial-image {
+  width: 100%;
+  margin: 0;
+}
+
+.tutorial-image-button:focus-visible,
+.image-popup-close:focus-visible {
+  outline: 2px solid var(--window-dark);
+  outline-offset: 4px;
+}
+
+.image-popup-open {
+  overflow: hidden;
+}
+
+.image-popup {
+  width: min(70vw, 800px);
+  height: 50dvh;
+  max-width: none;
+  max-height: none;
+  padding: 16px;
+  overflow: hidden;
+  color: var(--window-darkest);
+  background: var(--window-paper);
+  border: 2px solid var(--window-shadow);
+  box-shadow: 0 8px 32px rgba(57, 36, 49, 0.3);
+}
+
+.image-popup[open] {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.image-popup::backdrop {
+  background: rgba(57, 36, 49, 0.72);
+}
+
+.image-popup-close {
+  display: block;
+  align-self: flex-end;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 8px 12px;
+  color: var(--window-darkest);
+  background: var(--window-lightest);
+  border: 1px solid var(--window-shadow);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.image-popup-content {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+
+.image-popup-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 @media (max-width: 480px) {
   .tamagotchi-page {
     padding: 12px;
