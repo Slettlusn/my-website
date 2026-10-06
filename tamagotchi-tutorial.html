@@ -15,6 +15,37 @@
       alt="A red Tamagotchi Tama Destinations virtual pet"
     >
     <p>This is where I show you, step by step, how I built my own Tamagotchi.</p>
+
+    <section class="tutorial-section" aria-labelledby="setup-heading">
+      <h2 id="setup-heading">Setup</h2>
+      <p>This project is built around a Raspberry Pi Pico RP2040 running MicroPython. The Pico is connected to a 0.96-inch SSD1306 OLED display using I²C, along with three physical buttons used to control the Tamagotchi.</p>
+      <p>The components are mounted on veroboard and connected using short solid-core wires. Once everything has been soldered and tested, the electronics are placed inside a 3D-printed case.</p>
+      <p>The Pico is programmed using MicroPython through Thonny, and the project is based on Kevin McAleer's Pico-Tamachibi project. Before permanently soldering everything together, I tested the Pico, OLED display, and buttons individually to make sure each component worked correctly.</p>
+      <img
+        class="tutorial-image"
+        src="bilder/tools-used.png"
+        alt="Tools and components used: a Raspberry Pi Pico RP2040, a 0.96-inch SSD1306 OLED display, three tactile push buttons, veroboard, solid-core wire, a Micro-USB data cable, Dupont jumper wires, a 3D-printed case, soldering equipment, Thonny IDE, and MicroPython"
+        loading="lazy"
+      >
+    </section>
+
+    <section class="tutorial-section" aria-labelledby="wiring-heading">
+      <h2 id="wiring-heading">Wiring</h2>
+      <img
+        class="tutorial-image tutorial-image--table"
+        src="bilder/table1.png"
+        alt="OLED wiring: Pico GND to OLED GND, 3V3 to VCC, GP0 to SDA, and GP1 to SCL"
+        loading="lazy"
+      >
+      <p>The OLED uses I²C communication. SDA carries the data between the Pico and display, while SCL provides the clock signal.</p>
+      <img
+        class="tutorial-image tutorial-image--table"
+        src="bilder/table2.png"
+        alt="Button wiring: Pico GP2 to Button X, GP3 to Button B, GP4 to Button A, and GND to the other side of all three buttons"
+        loading="lazy"
+      >
+      <p>Each button connects a GPIO pin to GND when pressed. The three buttons provide the main controls for interacting with the virtual pet.</p>
+    </section>
   </main>
 </body>
 </html>

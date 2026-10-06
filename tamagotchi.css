@@ -243,6 +243,36 @@ body {
   object-fit: cover;
 }
 
+.tutorial-section {
+  max-width: 564px;
+  margin: 28px auto 0;
+  text-align: left;
+}
+
+.tutorial-section h2 {
+  margin: 0 0 14px;
+  color: var(--window-dark);
+  font-family: Georgia, serif;
+  font-size: clamp(1.25rem, 5vw, 1.6rem);
+  line-height: 1.2;
+}
+
+.tutorial-section p {
+  max-width: none;
+  margin: 14px 0 0;
+}
+
+.tutorial-image {
+  display: block;
+  width: min(100%, 400px);
+  height: auto;
+  margin: 18px auto 0;
+}
+
+.tutorial-image--table {
+  width: 100%;
+}
+
 @media (max-width: 480px) {
   .tamagotchi-page {
     padding: 12px;
