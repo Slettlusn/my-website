@@ -1,192 +1,138 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
-
-    <!-- Change your site title: (It is shown in the tab) -->
-    <title>About Me</title>
-
-    <!-- Change your site description: (It is shown in Google results) -->
-    <meta content="My personal website!" name="description" />
-
-    <!-- Setting character encoding and viewport size. Do not remove. -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- FavIcon (small image in tab), change to any image you want: -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get to know Leah, the person behind Yourdreamstarlet. Art, music, Tamagotchis, and a little internet nostalgia.">
+    <meta name="theme-color" content="#7560bd">
+    <title>About Me ♡ Yourdreamstarlet</title>
     <link rel="icon" type="image/x-icon" href="bilder/favicon.ico">
-
-    <!-- CSS: -->
-    <!-- You will have to change this to "../style.css" if this HTML file is in a subfolder, to "../../style.css" if this HTML file is in 2 subfolders, etc. -->
-    <link href="./style.css" rel="stylesheet" />
-    <link href="./aboutMe.css" rel="stylesheet" />
-    
-
-    <script>
-      // Template generated with petrapixel's layout generator.
-      // (Please do not remove this credit.)
-      console.log("%cTemplate generated with petrapixel's layout generator: https://petrapixel.neocities.org/coding/layout-generator", "font-size: 14pt; color: #922a45; background: #ffd3ef");
-    </script>
+    <link rel="stylesheet" href="aboutMe.css">
+    <!-- Original page template generated with petrapixel's layout generator:
+         https://petrapixel.neocities.org/coding/layout-generator -->
   </head>
   <body>
-    <!-- The next line is a skip-to-content link for keyboard users. Do not remove it! -->
     <a href="#content" id="skip-to-content-link">Skip to content</a>
 
-    <div class="layout">
-  
-      <!-- =============================================== -->
-      <!-- HEADER -->
-      <!-- =============================================== -->
+    <!-- Local social icons; no icon library or external assets needed. -->
+    <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="icon-instagram" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+        <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+        <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
+      </symbol>
+      <symbol id="icon-github" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.6 9.6 0 0 1 12 6.83c.85 0 1.71.11 2.51.34 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/>
+      </symbol>
+      <symbol id="icon-linkedin" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2ZM8 19H5V9h3ZM6.5 7.7a1.75 1.75 0 1 1 0-3.5 1.75 1.75 0 0 1 0 3.5ZM19 19h-3v-5.3c0-1.3-.5-1.9-1.5-1.9S13 12.5 13 13.7V19h-3V9h2.9v1.4a3.2 3.2 0 0 1 2.8-1.6c2.1 0 3.3 1.3 3.3 3.8Z"/>
+      </symbol>
+    </svg>
 
-      <header>
-
-        <div class="header-content">
-	        <div class="header-title">About Me</div>
-	        
-	        <!-- NAVIGATION -->
-	        <nav>
-	          <ul>
-	            <li><a href="/">Home</a></li>
-	            <li><a href="/page1">Page 1</a></li>
-	            <li><a href="/page2">Page 2</a></li>
-	            <li><a href="/page3">Page 3</a></li>
-	            <li>
-	                <strong>Submenu (hover to show)</strong>
-	                <ul>
-	                  <li><a href="/page-a">Page A</a></li>
-	                  <li><a href="/page-b">Page B</a></li>
-	                  <li><a href="/page-c">Page C</a></li>
-	                  <li><a href="/page-d">Page D</a></li>
-	                  <li><a href="/page-e">Page E</a></li>
-	                </ul>
-	            </li>
-	          </ul>
-	        </nav>
-        	
-        </div>
+    <div class="profile-window">
+      <header class="window-titlebar">
+        <div class="window-title"><span aria-hidden="true">✧</span> about me <span aria-hidden="true">✧</span></div>
+        <div class="window-lights" aria-hidden="true"><span></span><span></span><span></span></div>
       </header>
 
-	  
-	
-      
-  
-      <main id="content"> <!-- Do NOT remove the ID here -->
+      <div class="window-screen">
+        <div class="toolbar">
+          <nav class="page-navigation" aria-label="Main navigation">
+            <a class="chrome-tab" href="index.html">Home</a>
+            <a class="chrome-tab is-current" href="aboutMe.html" aria-current="page">About me</a>
+            <a class="chrome-tab" href="#platforms">Platforms</a>
+          </nav>
+          <nav class="social-navigation" aria-label="Social profiles">
+            <a class="social-link" href="https://www.instagram.com/yourdreamstarlet/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (opens in a new tab)" title="Instagram">
+              <svg aria-hidden="true"><use href="#icon-instagram"/></svg>
+            </a>
+            <a class="social-link" href="https://github.com/Slettlusn" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)" title="GitHub">
+              <svg aria-hidden="true"><use href="#icon-github"/></svg>
+            </a>
+            <a class="social-link" href="https://www.linkedin.com/in/leah-slettingdalen-396771352/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)" title="LinkedIn">
+              <svg aria-hidden="true"><use href="#icon-linkedin"/></svg>
+            </a>
+          </nav>
+        </div>
 
-        
+        <div class="location-bar"><p><span class="status-light" aria-hidden="true"></span> Currently viewing: <strong>About me</strong></p><span class="location-sparkles" aria-hidden="true">✧ ⋆ ✧</span></div>
 
-        <!-- =============================================== -->
-        <!-- MAIN CONTENT -->
-        <!-- =============================================== -->
+        <main id="content" class="profile-layout" tabindex="-1">
+          <div class="intro-column">
+            <section class="about-section" aria-labelledby="about-heading">
+              <h1 class="section-ribbon" id="about-heading"><span class="info-symbol" aria-hidden="true">i</span> About Me</h1>
+              <div class="identity">
+                <span class="glass-square" aria-hidden="true"></span>
+                <div><h2>Leah</h2><p>Art / music / little digital worlds</p></div>
+                <span class="identity-star" aria-hidden="true">✧</span>
+              </div>
+              <!-- Personalize the introduction here. -->
+              <div class="about-copy">
+                <p><strong>Hi, welcome to my little corner of the internet!</strong> I’m Leah, also known here as <a href="index.html">yourdreamstarlet</a>. This is a home for the things I make and the things that make me happy.</p>
+                <p>Think <em>art, music, Tamagotchis</em>, and a little internet nostalgia. I love giving all those little pieces a place to live, somewhere between a digital scrapbook and a personal website.</p>
+                <p>Have a look around, put on a song, and stay a while. <span class="inline-heart" aria-label="Love">♡</span></p>
+              </div>
+              <div class="section-end" aria-hidden="true"></div>
+            </section>
 
-
-        <section>
-
-          <h1>Page Title (Heading 1)</h1>
-          <p>This layout was generated with <a href="https://petrapixel.neocities.org/" target="_blank">petrapixel</a>'s layout generator. You may remove the credit in the footer, but please leave the credit in the code. Thank you!</p>
-          <p>
-            I will now show you how to use the most common HTML text elements:
-            <b>This is bold text.</b> 
-            <strong>This is also bold text.</strong> 
-            <i>This is italic text.</i> 
-            <em>This is also italic text.</em> 
-            <strike>This is strikethrough text.</strike> 
-            <u>This is underlined text.</u> 
-            <a href="https://petrapixel.neocities.org/">This is a link.</a> 
-            <a href="https://petrapixel.neocities.org/" target="_blank">This is a link that will open in a new tab.</a> 
-            <code>This is code (displayed in a monospace font).</code>
-            <abbr title="Example.">This is an abbreviation (Try hovering over it).</abbr>
-            <mark>This is highlighted text.</mark>
-            This is a line break (The br stands for break.): <br />It's different from a paragraph because it does not add space inbetween the lines of text.
-          </p>
-          <p>This is a paragraph. As you can see, there's a bit of space between it and the previous paragraph.</p>
-
-          <blockquote>This is a blockquote. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</blockquote>
-
-          <h2>Heading 2</h2>
-          <ul>
-            <li>Unsorted list</li>
-            <li>Unsorted list</li>
-            <li>Unsorted list</li>
-          </ul>
-
-          <p>Lorem ipsum dolor sit amet.</p>
-
-          <ol>
-            <li>Sorted list</li>
-            <li>Sorted list</li>
-            <li>Sorted list</li>
-          </ol>
-
-          <h3>Heading 3</h3>
-          <pre>This is preformatted text, which means that     spaces    are preserved:
-          :D</pre>
-
-          <p>This is preformatted code:</p>
-          <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;body&gt;
-   &lt;h1&gt;My First Heading&lt;/h1&gt;
-   &lt;p&gt;My first paragraph.&lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-
-          <p>This is a separator line / divider:</p>
-          <hr /> <!-- hr = horizontal rule -->
-
-          <p>
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          </p>
-
-          <h4>Heading 4</h4>
-
-          <p>Here are two columns:</p>
-          <div class="two-columns">
-	          <div>
-	          	<p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-	          	<p>At
-            vero eos et accusam et justo duo dolores et ea rebum.</p>
-	          </div>
-	          <div>
-	          	<p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-	          	<p>At
-            vero eos et accusam et justo duo dolores et ea rebum.</p>
-	          </div>
+            <div class="scrapbook" aria-label="Pastel digital scrapbook">
+              <figure class="image-frame scrapbook-sky">
+                <img src="bilder/blue.jpg" alt="A dreamy blue sky filled with glowing stars, bubbles, and music notes" width="735" height="463">
+                <figcaption>a little daydream</figcaption>
+              </figure>
+              <figure class="image-frame scrapbook-stars">
+                <img src="bilder/d01d423701c99ca3eac6f7587445d3e5.jpg" alt="Soft yellow, pink, and blue stars on a lavender background" width="736" height="736">
+                <figcaption>✧ wish upon a star</figcaption>
+              </figure>
+              <figure class="image-frame scrapbook-banner">
+                <img src="bilder/001162a0eca7e3e35a3ed28a1129db26.jpg" alt="An iridescent pastel dreamscape with luminous hearts and light trails" width="1200" height="592">
+                <figcaption>somewhere in my digital world . . .</figcaption>
+              </figure>
+            </div>
           </div>
 
-          <h5>Heading 5</h5>
+          <div class="favorites-column">
+            <div class="favorites-grid" aria-label="A few of my favorite things">
+              <figure class="image-frame favorite-pet">
+                <img src="bilder/tamagotchi%20placeholder.png" alt="A pixel art purple Tamagotchi with a little blue cat on its screen" width="1024" height="1024">
+                <figcaption>01 / pocket-sized joy</figcaption>
+              </figure>
+              <figure class="image-frame favorite-art">
+                <img src="bilder/gyaru.jpg" alt="My gyaru-inspired character artwork in a retro Paint window" width="1396" height="2039">
+                <figcaption>02 / things I make</figcaption>
+              </figure>
+              <figure class="image-frame favorite-dolphins">
+                <img src="bilder/delfiner.gif" alt="Animated blue dolphins swimming through a sparkling underwater world" width="300" height="300">
+                <figcaption>03 / internet nostalgia</figcaption>
+              </figure>
+              <figure class="image-frame favorite-project">
+                <img src="bilder/IMG_20261001_210425860.jpg" alt="An open blue virtual pet shell beside a small electronics project on a pink desk" width="3072" height="3485">
+                <figcaption>04 / a work in progress</figcaption>
+              </figure>
+            </div>
 
-          <p>This is an image:</p>
-          <img class="image" alt="" src="https://picsum.photos/id/10/200/100" />
-
-          <p>This is a full-width image:</p>
-          <img class="full-width-image" alt="" src="https://picsum.photos/id/10/1000/400" />
-
-          <p>These are multiple images in a row:</p>
-          <div class="images">
-            <img alt="" src="https://picsum.photos/id/10/1000/400" />
-            <img alt="" src="https://picsum.photos/id/10/1000/400" />
-            <img alt="" src="https://picsum.photos/id/10/1000/400" />
+            <section class="more-section" id="platforms" aria-labelledby="more-heading">
+              <h2 class="section-ribbon" id="more-heading">A little more <span aria-hidden="true">✧</span></h2>
+              <h3><span class="glass-square" aria-hidden="true"></span> My little universe</h3>
+              <p>This space is always a work in progress: a collection of favorite things, creative projects, and whatever I’m into lately.</p>
+              <p>You can explore my <a href="tamagotchi.html">Tamagotchi project</a>, find my <a href="https://open.spotify.com/user/slettl?si=9eee3c2f73b94c16" target="_blank" rel="noopener noreferrer">music on Spotify<span class="visually-hidden"> (opens in a new tab)</span></a>, or say hello elsewhere on the internet.</p>
+              <div class="platform-links" aria-label="Find me online">
+                <a href="https://www.instagram.com/yourdreamstarlet/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a>
+                <a href="https://github.com/Slettlusn" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a>
+                <a href="https://www.linkedin.com/in/leah-slettingdalen-396771352/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a>
+              </div>
+              <a class="contact-link" href="mailto:leah.slettingdalen@gmail.com">Leave a little hello <span aria-hidden="true">♡</span></a>
+              <div class="section-end" aria-hidden="true"></div>
+            </section>
           </div>
+        </main>
+      </div>
 
-          <h6>Heading 6</h6>
-          <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
-
-        </section>
-      </main>
-
-
-      <!-- =============================================== -->
-      <!-- FOOTER -->
-      <!-- =============================================== -->
-
-      <footer>
-            <div>Footer Text. <a href="/">Link.</a> Template generated with <a href="https://petrapixel.neocities.org/coding/layout-generator.html">petrapixel's layout generator</a>.</div>
+      <footer class="window-footer">
+        <div class="window-lights" aria-hidden="true"><span></span><span></span><span></span></div>
+        <p class="footer-message">Thanks for stopping by <span aria-hidden="true">♡</span></p>
+        <a class="footer-home" href="index.html">yourdreamstarlet <span aria-hidden="true">✧</span></a>
       </footer>
-  
-    <!-- Closing .layout: -->
     </div>
-
-
-    <!-- Add any additional Javascript code (<script></script>) here. -->
   </body>
 </html>
