@@ -224,8 +224,7 @@ figure, p, h1, h2 { margin: 0; }
 .scrapbook-sky img { object-position: center 44%; }
 .favorites-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-content: start; gap: 18px; }
 .favorites-grid .image-frame { aspect-ratio: 1; }
-.favorite-pet { border-color: #bb9eca; }
-.favorite-pet img { padding: 15px 15px 32px; object-fit: contain; image-rendering: pixelated; background: radial-gradient(ellipse at 40% 20%, #fff2fc, #e0d8f7 65%, #c4e9f4); }
+.favorite-photo { border-color: #bb9eca; }
 .favorite-art { border-color: #d0a1bb; }
 .favorite-art img { object-position: center 23%; }
 .favorite-project img { object-position: center 32%; }
@@ -330,7 +329,6 @@ figure, p, h1, h2 { margin: 0; }
   .about-copy { padding: 21px 18px 14px; }
   .intro-greeting { font-size: 25px; }
   .favorites-grid { gap: 12px; }
-  .favorite-pet img { padding: 9px 9px 27px; }
   .image-frame figcaption { padding: 3px 4px; font-size: 8px; }
   .scrapbook-banner figcaption, .scrapbook-sky figcaption { font-size: 8px; }
   .platform-strip { gap: 10px; margin-top: 21px; padding-top: 12px; }
