@@ -209,67 +209,120 @@ body {
   font-size: 1.2rem;
 }
 
-.nav-map {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 325 / 568;
+/* Real links in a beveled desktop window; the whole row is clickable. */
+.nav-panel {
+  padding: 3px;
+  border: 2px solid;
+  border-color: #fff #53535b #53535b #fff;
+  background: #c0c0c0;
+  box-shadow: 1px 1px 0 #34343c, inset 1px 1px 0 #dfdfe1;
+  font-family: Tahoma, "MS Sans Serif", sans-serif;
 }
 
-.nav-map img {
-  display: block;
-  width: 100%;
-  height: 100%;
+.nav-titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  min-height: 31px;
+  padding: 4px 5px 4px 7px;
+  color: #fff;
+  background: linear-gradient(90deg, #080879, #294c9e);
 }
 
-.nav-hotspot {
-  position: absolute;
-  display: block;
-  border: 2px solid transparent;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.18s ease, border-color 0.18s ease;
+.nav-titlebar h2 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: .2px;
 }
 
-.nav-hotspot:hover,
-.nav-hotspot:focus-visible {
-  background: rgba(255, 255, 255, 0.16);
-  border-color: rgba(50, 37, 63, 0.85);
-  outline: none;
+.nav-window-controls { display: flex; flex-shrink: 0; gap: 3px; }
+.nav-window-controls > span {
+  display: grid;
+  place-items: center;
+  width: 17px;
+  height: 18px;
+  border: 1px solid;
+  border-color: #fff #45454c #45454c #fff;
+  color: #171722;
+  background: #c0c0c0;
+  box-shadow: inset -1px -1px 0 #85858b;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
 }
 
-.nav-hotspot--about {
-  top: 20.8%;
-  left: 18%;
-  right: 33%;
-  height: 8.6%;
+.nav-links {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
+  margin: 0;
+  padding: 12px 8px 10px;
+  list-style: none;
 }
 
-.nav-hotspot--art {
-  top: 36.2%;
-  left: 18%;
-  right: 33%;
-  height: 8.8%;
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 54px;
+  padding: 6px 7px;
+  border: 2px solid;
+  border-color: #fff #898991 #898991 #fff;
+  color: #34313f;
+  background: linear-gradient(180deg, #e4e4e8, #d2d2d8);
+  box-shadow: 1px 1px 0 #73737b;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+  text-decoration: none;
+  transition: box-shadow 150ms;
 }
 
-.nav-hotspot--music {
-  top: 52.3%;
-  left: 18%;
-  right: 33%;
-  height: 8.8%;
+.nav-button--tamagotchi { background: linear-gradient(120deg, #f3dfee, #dce8f5); }
+.nav-label { min-width: 0; }
+.nav-arrow { margin-left: auto; color: #656079; font-size: 18px; line-height: 1; }
+.nav-button:hover {
+  border-color: #fff #8e7f9b #8e7f9b #fff;
+  color: #38235c;
+  background: linear-gradient(120deg, #fce2f1, #dceeff);
+  box-shadow: 1px 1px 0 #766681, inset 0 0 0 1px #fff7;
+}
+.nav-button:hover .nav-label, .nav-button:focus-visible .nav-label { text-decoration: underline; text-underline-offset: 3px; }
+.nav-button:focus-visible { color: #28214a; background: #e7e8ff; outline: 2px dotted #162667; outline-offset: -6px; }
+.nav-button:active { border-color: #777780 #fff #fff #777780; background: #d9d1e7; box-shadow: inset 1px 1px 0 #b0a9bd; }
+
+/* Keep the original illustrated icons; labels are editable HTML. */
+.nav-icon {
+  flex: 0 0 32px;
+  width: 32px;
+  height: 36px;
+  border-radius: 3px;
+  background: #c0c0c0 url("bilder/navigation.JPG") no-repeat;
+  background-size: 216.667px auto;
+}
+.nav-icon--about { background-position: -8px -74px; }
+.nav-icon--art { background-position: -8px -132px; }
+.nav-icon--music { background-position: -8px -194px; }
+.nav-icon--links { background-position: -8px -260px; }
+.nav-icon--tamagotchi { display: grid; place-items: center; background: #e8dff3; }
+.nav-icon--tamagotchi img { display: block; width: 32px; height: 32px; object-fit: contain; image-rendering: pixelated; }
+
+@media (min-width: 981px) and (max-width: 1100px) {
+  .nav-titlebar { gap: 4px; padding-right: 4px; padding-left: 5px; }
+  .nav-titlebar h2 { font-size: 13px; letter-spacing: 0; }
+  .nav-window-controls { gap: 2px; }
+  .nav-window-controls > span { width: 15px; height: 16px; font-size: 14px; }
+  .nav-links { padding-right: 6px; padding-left: 6px; }
+  .nav-button { gap: 6px; padding-right: 5px; padding-left: 5px; font-size: 13px; }
+  .nav-arrow { font-size: 16px; }
 }
 
-.nav-hotspot--links {
-  top: 68.8%;
-  left: 18%;
-  right: 33%;
-  height: 9.4%;
-}
-
-.nav-hotspot--updates {
-  top: 85.3%;
-  left: 18%;
-  right: 33%;
-  height: 8.8%;
+@media (prefers-reduced-motion: reduce) {
+  .nav-button { transition: none; }
 }
 
 .dolphin-panel img {

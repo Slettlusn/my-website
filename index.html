@@ -17,15 +17,17 @@
     <main class="layout-grid">
       <div class="left-rail">
         <nav class="panel nav-panel" aria-label="Main navigation">
-          <h2 class="visually-hidden">Navigation</h2>
-          <div class="nav-map">
-            <img src="bilder/navigation.JPG" alt="Navigation panel with links for About Me, Art, Music, Links, and Updates">
-            <a class="nav-hotspot nav-hotspot--about" href="aboutMe.html" aria-label="About me"></a>
-            <a class="nav-hotspot nav-hotspot--art" href="art.html" aria-label="Art"></a>
-            <a class="nav-hotspot nav-hotspot--music" href="https://open.spotify.com/user/slettl?si=9eee3c2f73b94c16" target="_blank" rel="noopener noreferrer" aria-label="Music"></a>
-            <a class="nav-hotspot nav-hotspot--links" href="links.html" aria-label="Links"></a>
-            <a class="nav-hotspot nav-hotspot--updates" href="tamagotchi.html" aria-label="tamagotchi"></a>
+          <div class="nav-titlebar">
+            <h2>Navigation</h2>
+            <div class="nav-window-controls" aria-hidden="true"><span>−</span><span>□</span><span>×</span></div>
           </div>
+          <ul class="nav-links">
+            <li><a class="nav-button" href="aboutMe.html"><span class="nav-icon nav-icon--about" aria-hidden="true"></span><span class="nav-label">About me</span><span class="nav-arrow" aria-hidden="true">›</span></a></li>
+            <li><a class="nav-button" href="art.html"><span class="nav-icon nav-icon--art" aria-hidden="true"></span><span class="nav-label">Art</span><span class="nav-arrow" aria-hidden="true">›</span></a></li>
+            <li><a class="nav-button" href="https://open.spotify.com/user/slettl?si=9eee3c2f73b94c16" target="_blank" rel="noopener noreferrer"><span class="nav-icon nav-icon--music" aria-hidden="true"></span><span class="nav-label">Music<span class="visually-hidden"> (Spotify, opens in a new tab)</span></span><span class="nav-arrow" aria-hidden="true">↗</span></a></li>
+            <li><a class="nav-button" href="links.html"><span class="nav-icon nav-icon--links" aria-hidden="true"></span><span class="nav-label">Links</span><span class="nav-arrow" aria-hidden="true">›</span></a></li>
+            <li><a class="nav-button nav-button--tamagotchi" href="tamagotchi.html"><span class="nav-icon nav-icon--tamagotchi" aria-hidden="true"><img src="bilder/tamagotchi%20placeholder.png" alt="" width="32" height="32"></span><span class="nav-label">Tamagotchi</span><span class="nav-arrow" aria-hidden="true">›</span></a></li>
+          </ul>
         </nav>
 
         <section class="panel image-only-panel dolphin-panel" aria-label="Dolphins">
